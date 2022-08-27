@@ -1,0 +1,224 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head> 
+    <title>My Timeline | Let's Bowl</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Sean Dylan Patterson">
+    <link href="/images/logo1.png" rel="icon"> 
+    <link href="/images/logo1.png" rel="apple-touch-icon" width="42" height="42" alt="The website's logo">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript;version=12.22" src="js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript;version=12.22" src="js/script.js"></script>
+    <script type="text/javascript;version=12.22" src="js/cufon-yui.js"></script>
+    <script type="text/javascript;version=12.22" src="js/arial.js"></script>
+    <script type="text/javascript;version=12.22" src="js/cuf_run.js"></script>
+    <script type="text/javascript;version=12.22" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <style>
+
+        #center-block{
+            background-color: #f2f2f2;
+            width: 600px;
+            height: 600px; 
+            margin: auto;
+            margin-top: auto;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+
+        }
+        #texting{
+            color: #1c1c1c;
+            width: 300px;
+            height: 30px;
+            border-radius: 4px;
+            border: solid 1px #8f8f8f;
+            padding: 10px;
+            font-size: 14px;
+        }
+        #button{
+            background-color: #11bb66; 
+            color: #fff;
+            width: 320px;
+            height: 50px;
+            border-radius: 4px;
+            border: solid 1px #8f8f8f;
+            padding: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        #profile_pic{
+
+            width: 160px;
+            height: 160px;
+            margin-top: -140px;
+            margin-left: -670px;
+            border-radius: 50%;
+            border:solid 6px #f2f2f2;
+            padding: 1px;
+
+        }
+
+        #pic{
+
+            font-size: 24px;
+            font-weight: 200px;
+            margin-left:-670px;
+            padding: 1px;
+
+        }
+        
+        #text{
+
+            font-size: 16px; 
+            text-align: center;
+            align-items: center; 
+            margin-right: -220px;
+            margin-top: -55px;
+            min-width: 100px;
+            padding: 1px;
+
+        }
+        
+        #main{
+
+            background-color: #e0e0e0; 
+            width:923px;
+            min-height:340px; 
+            text-align: center;
+            padding: 1px;
+
+        }
+        
+        #menu_buttons{
+
+            background-color: #11bb66;
+            color: #ffffff; 
+            width: 90px;
+            height: 22px;
+            display: inline-block;
+            border-radius: 2px;
+            border:solid 1px #e0e0e0; 
+            margin: auto;
+            text-align: center; 
+            align-items: right;
+            padding: 4px;
+
+        }
+
+        #posts{
+
+            margin:10px 7px 10px 7px; 
+            border:solid 1px #3a3a3a;
+            background-color: #ffffff; 
+            padding: 6px;
+            font-size: 14px;
+            display: flex; 
+        }
+    </style>
+</head>
+<body> <!-- Header menu section starts -->
+<div class="main">
+<div class="main_resize">
+    <div class="header">
+    <div class="logo">  
+        <a href="#"><h1><span>Let's</span><img src="/images/logo1.png" height="40" width="40" alt="The website's logo" />bowl</a></h1>
+    </div>
+    <div class="search">
+        <form method="get" id="search" action="#">
+        <span>
+        <input type="text" placeholder="Search..." name="s" id="s" />
+        <input name="searchsubmit" type="image" src="images/search.png" alt="Magnifying glass for searching" value="Go" id="searchsubmit" class="btn" />
+        </span>
+        </form>
+        <!--/searchform -->
+        <div class="clr"></div>
+    </div>
+    <div class="clr"></div> 
+    <div class="menu_nav">
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="calendar.html">Calendar</a></li> 
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="clr"></div>                 
+        </div> <!-- Header menu section ends -->
+        
+        <!-- Main header ssection starts -->
+        <div id="main"> 
+            <img src="images/header_images.png" alt="A custom banner image across the top of the page.">  
+            <img id="profile_pic" src="/images/user-image2.png" alt="The profile owner's picture"> 
+            <div id="pic">User's Name</div> 
+            <br> 
+        </div> <!-- User quick link buttons section starts -->
+        <div id="text"/>
+            <div id="menu_buttons">Timeline</div> 
+            <div id="menu_buttons">About Me</div> 
+            <div id="menu_buttons">Friends</div>
+            <div id="menu_buttons">Photos</div>
+            <div id="menu_buttons">Videos</div>
+            <div id="menu_buttons">Settings</div>
+            <br>
+        </div>
+    </div> <!-- User quick link buttons section ends -->
+    </div> <!-- Main header section ends --> 
+<br>
+<br> <!-- Main body section starts -->
+    <div id="center-block">
+        <h1>Login<img src="/images/logo1.png" height="40" width="40" alt="The website's logo"><a href="#"><span>Sign Up</span></a></h1> 
+        <div class="row">
+            <br> 
+            <form name="sign-up" method="post" data-netlify="true">
+            <p><input id="texting" type="text" name="first" placeholder="Please enter your first name..." required="true"></p>
+            <p><input id="texting" type="text" name="last" placeholder="Please enter your last name..." required="true"></p>
+            <p><input id="texting" type="email"  name="email" placeholder="Please enter your email address..." required="true"></p>
+            <p><input id="texting" type="password" name="password" placeholder="Please enter a password..." required="true"></p>
+            <p><input id="texting" type="password" name="confirm" placeholder="Please confirm your password..." required="true"></p>
+            <div data-netlify-recaptcha="true"></div> 
+            <button id="button" type="submit" text-align="center" action="send">Sign Up</button></form>
+            <br><br><br>
+        </div>
+    </div>
+    <div class="fbg">
+    <div class="fbg_resize">
+        <div class="col c1">
+        <h2><span>Recommended </span></h2>
+        <a href="#"><img src="images/pic_1.jpg" width="58" height="58" alt="Northmead BOwling Club Logo" /></a> <a href="#"><img src="images/pic_2.jpg" width="58" height="58" alt="Bowls SA Logo" /></a> <a href="#"><img src="images/pic_3.jpg" width="58" height="58" alt="The South African Olympic Committee Logo" /></a> <a href="#"><img src="images/pic_4.jpg" width="58" height="58" alt="The South African Department of Sports, Arts and Culture Emblem " /></a> <a href="#"><img src="images/pic_5.jpg" width="58" height="58" alt="Bowls - 1 Sport 4 Life Logo " /></a> <a href="#"><img src="images/pic_6.jpg" width="58" height="58" alt="Republic of South Africa Department of Sports, Arts and Culture words written out" /></a> </div>
+        <div class="col c2">
+        <h2><span>Joker Draws</span></h2>
+        <p>Live Joker Draw Events<br />
+            Follow along with the weekly Joker Draw for your club. What's happened so far and what's still coming up? </p>
+            <div><a href="#">The Tables... </a></div>
+        </div>
+        <div class="col c3">
+        <h2><span>Newsletter</span></h2>
+        <p>Subscribe to our monthly newsletter <br />
+            for announcements, promotions, special discounts and more. <a href="#">Have a look...</a></p>
+        </div>
+        <div class="col c3">
+        <form name="subscribe" data-netlify="true"> 
+            <p><label>Email <input type="email" name="email" required="true"></label></p>
+            <p><button type="submit">Send</button></p> 
+        </form>
+        </div>
+        <p>
+        |
+        </p>
+    </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="footer_resize"> 
+    <p class="lf">&copy; Copyright 2022 <a href="#">Let's Bowl</a>. All Rights Reserved. e&oe </p>
+    <p>View our <a href="/privacy.html">Privacy Policy </a></p>
+    <p class="rf">Layout by <a href="http://www.rocketwebsitetemplates.com/"> <title>Rocket Website Templates</title> Rocket Website Templates </a></p> 
+    <div class="clr"></div>
+    </div>
+</div> 
+    <div>
+    </div>
+</body>
+</html> 
