@@ -1,0 +1,7 @@
+{
+    "enabled": true,
+    "custom_domain": "letsbowl.tk",
+    "app_default_domain": "letsbowlusers-phzka.mongodbstitch.com",
+    "default_error_path": "",
+    "default_error_code": ""
+}
