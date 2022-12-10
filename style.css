@@ -1,28 +1,99 @@
 @charset "utf-8";
 
-#profile_pic{
+html {
+  background-color: #dfdfdf;
+  padding: 0;
+  margin: 0;
+}
 
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #11bb66;
+  color: #1a1a1a;
+  z-index: 2;
+  box-shadow: 0 0 15px #1a1a1a;
+}
+
+#search-bar {
+  position: relative;
+  height: 46px;
+  margin: 2px 20px;
+  width: 300px;
+  left: 1260px;
+  top: -88px;
+  color: #1a1a1a;
+}
+
+#search-icon {
+  position: relative;
+  margin: 2px 20px;
+  right: -1175px;
+  top: -75px;
+}
+/* 
+#menu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+#menu li {
+  position: relative;
+  display: inline-block;
+  flex-direction: row;
+  width: 500px;
+  height: 50px;
+  top: -100px;
+  left: 500px;
+  margin: 0 20px;
+  padding: 0 20px;
+} */
+
+#banner-img {
+  position: relative;
+}
+
+#banner {
+  position: relative;
+  left: 20px;
+}
+
+#profile_pic{
+  position: relative;
   width: 160px;
   height: 160px;
-  margin-top: -140px;
-  margin-left: -670px;
+  top: -190px;
+  left: -335px;
   border-radius: 50%;
   border:solid 6px #f2f2f2;
   padding: 1px;
-
 }
 
-#pic{
+#center-block {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  top: 50px;
+  left: 40%;
+}
 
-  font-size: 24px;
-  font-weight: 200px;
-  margin-left:-670px;
-  padding: 1px;
-
+#username {
+  position: relative;
+  width: 200px;
+  font-size: 1.5rem;
+  font-weight: 500px;
+  padding: 5px;
+  top: -180px;
+  left: 20px;
 }
 
 #text{
-
+  position: relative;
   font-size: 16px; 
   text-align: center;
   align-items: center; 
@@ -30,14 +101,25 @@
   margin-top: -55px;
   min-width: 100px;
   padding: 1px;
-
+  top: 10px;
+  color: #1a1a1a;
 }
 
 #main{
 
-  background-color: #e0e0e0; 
+  background-color: #bdbdbd; 
   width:923px;
-  min-height:340px; 
+  height: 100%; 
+  text-align: center;
+  padding: 1px;
+
+}
+
+#banner{
+
+  background-color: #bdbdbd; 
+  width:923px;
+  height: 340px; 
   text-align: center;
   padding: 1px;
 
@@ -46,12 +128,12 @@
 #menu_buttons{
 
   background-color: #11bb66;
-  color: #ffffff; 
+  color: #474747; 
   width: 90px;
   height: 22px;
   display: inline-block;
   border-radius: 2px;
-  border:solid 1px #e0e0e0; 
+  border:solid 1px #ffffff; 
   margin: auto;
   text-align: center; 
   align-items: right;
@@ -63,7 +145,7 @@
 
   margin:10px 7px 10px 7px; 
   border:solid 1px #3a3a3a;
-  background-color: #ffffff; 
+  background-color: #e6e4e4; 
   padding: 6px;
   font-size: 14px;
   display: flex; 
@@ -76,21 +158,20 @@ body {
   color: #1a1a1a;
   font: normal 14px/1.6em Arial, Helvetica, sans-serif;
 }
-html {
-  padding: 0;
-  margin: 0;
-}
 .main {
   padding: 0;
   margin: 0;
 }
 .logo {
-  float: left;
-  width: 400px;
+  background-color: #f1f1f1cc;
+  text-align: center;
+  width: 270px;
   height: 86px;
   padding: 0;
   margin: 0 auto;
-  margin-left: 30px;
+  margin-left: 3px;
+  position: relative;
+  top: -38px;
 }
 h1 {
   margin: 0;
@@ -98,6 +179,7 @@ h1 {
   color: #1a1a1a;
   font: bold 38px/1.8em Arial, Helvetica, sans-serif;
   letter-spacing: -2px;
+  font-size: 3rem;
 }
 h1 a,
 h1 a:hover {
@@ -187,7 +269,7 @@ ul,
 }
 .menu_nav ul li.active a,
 .menu_nav ul li a:hover {
-  color: #fff;
+  color: #4e4e4e;
   text-decoration: none;
   background: #11bb66;
 }
@@ -219,7 +301,7 @@ ul,
   color: #11bb66;
 }
 .mainbar .post-data a {
-  color: #4a4a4a;
+  color: #1a1a1a;
 }
 .mainbar .spec a {
   padding: 5px 15px;
@@ -236,7 +318,7 @@ ul,
   padding: 10px 15px 10px 0;
 }
 .sidebar .gadget .testi {
-  padding: 0 0 0 0;
+  padding: 0;
 }
 .sidebar .gadget .title {
   text-align: right;

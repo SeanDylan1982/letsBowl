@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head> 
+    <title>Posts | Let's Bowl</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Sean Dylan Patterson">
+    <link href="./images/logo1.png" rel="icon"> 
+    <link href="./images/logo1.png" rel="apple-touch-icon" width="42" height="42" alt="The website's logo">
+    <link href="./style.css" rel="stylesheet" type="text/css" />    
+</head>
+<body> <!-- Header menu section starts -->
+<div class="main">
+<div class="main_resize">
+    <div class="header">   
+        <div class="navbar" id="navbar">
+            <div class="logo">  
+                <a href="#"><h1><span>Let's</span><img src="./images/logo1.png" height="40" width="40" alt="The website's logo" />bowl</a></h1>
+            </div>
+            <!-- <ul class="menu-bar" id="menu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./calendar.html">Calendar</a></li> 
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+            </ul> -->
+            <input type="search" name="search" id="search-bar" placeholder=" Search...">
+            <img src="./images/search.png" alt="magnifying glass" id="search-icon">
+        </div>
+    </div> 
+    <!-- Main header ssection starts -->
+        <div id="banner"> 
+            <img id="banner-img" src="./images/header_images.png" alt="A custom banner image across the top of the page.">  
+            <img id="profile_pic" src="./images/logo.png" alt="The profile owner's picture"> 
+            <div id="username">User Name</div> 
+            <br> 
+        </div> <!-- User quick link buttons section starts -->
+        <div id="text">
+            <div id="menu_buttons">Timeline</div> 
+            <div id="menu_buttons">About Me</div>
+            <div id="menu_buttons">Friends</div>
+            <div id="menu_buttons">Photos</div>
+            <div id="menu_buttons">Videos</div>
+            <div id="menu_buttons">Settings</div>
+            <br>
+        </div>
+    </div> <!-- User quick link buttons section ends -->
+    </div> <!-- Main header section ends --> 
+<br>
+<br> <!-- Main body section starts -->
+    <div id="center-block"> 
+        <h1><span>Login</span><img src="./images/logo1.png" height="40" width="40" alt="An image of the website's logo"><a href="#">Sign Up</a></h1>
+        <div class="row">
+            <br> 
+            <div class="form-control" id="form-container">
+                <form action="./posts.php" method="POST" class="form-control" name="posts" id="posts-form">
+                    <div class="form-group">
+                    <label for="email">eMail Address</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Your email address..."/>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" name="password" placeholder="Enter a password..."/>
+                    </div>
+                    <br>
+                    <br>
+                    <input type="hidden" name="form_submitted" value="1" />
+                    <div class="form-group">
+                    <button type="submit" class="btn btn-success" value="Register" id="register-btn"/><i class="fa fa-user"></i> Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="fbg">
+    <div class="fbg_resize">
+        <div class="col c1">
+        <h2><span>Recommended </span></h2>
+        <a href="#"><img src="images/pic_1.jpg" width="58" height="58" alt="Northmead BOwling Club Logo" /></a> <a href="#"><img src="images/pic_2.jpg" width="58" height="58" alt="Bowls SA Logo" /></a> <a href="#"><img src="images/pic_3.jpg" width="58" height="58" alt="The South African Olympic Committee Logo" /></a> <a href="#"><img src="images/pic_4.jpg" width="58" height="58" alt="The South African Department of Sports, Arts and Culture Emblem " /></a> <a href="#"><img src="images/pic_5.jpg" width="58" height="58" alt="Bowls - 1 Sport 4 Life Logo " /></a> <a href="#"><img src="images/pic_6.jpg" width="58" height="58" alt="Republic of South Africa Department of Sports, Arts and Culture words written out" /></a> </div>
+        <div class="col c2">
+        <h2><span>Joker Draws</span></h2>
+        <p>Live Joker Draw Events<br />
+            Follow along with the weekly Joker Draw for your club. What's happened so far and what's still coming up? </p>
+            <div><a href="#">The Tables... </a></div>
+        </div>
+        <div class="col c3">
+        <h2><span>Newsletter</span></h2>
+        <p>Subscribe to our monthly newsletter <br />
+            for announcements, promotions, special discounts and more. <a href="#">Have a look...</a></p>
+        </div>
+        <div class="col c3">
+        <form name="subscribe" data-netlify="true"> 
+            <p><label>Email <input type="email" name="email" required="true" placeholder="Email address"></label></p> 
+            <p><button type="submit">Send</button></p> 
+        </form>
+        </div>
+        <p>
+        |
+        </p>
+    </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="footer_resize">
+    <p class="lf">&copy; Copyright 2022 <a href="#">Let's Bowl</a>. All Rights Reserved. e&oe </p>
+    <p>View our <a href="/privacy.html">Privacy Policy </a></p>
+    <p class="rf">Layout by <a href="http://www.rocketwebsitetemplates.com/"> <title>Rocket Website Templates</title> Rocket Website Templates </a></p> 
+    <div class="clr"></div>
+    </div>
+</div>
+    <div>
+    </div>
+</body>
+</html>
