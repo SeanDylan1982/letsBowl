@@ -5,6 +5,7 @@ $serverusername = "admin";
 $serverpassword = "LL0921jj";
 $dbname = "letsBowl";
 
+$username = $_POST['username'];
 $email = $_POST['email'];
 $password = $_POST['password'];
 
@@ -22,7 +23,7 @@ if ($conn->query($sql) === TRUE) {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
-$conn->close();
-header("Location: ./timeline.html");
+// $conn->close();
+header("Location: ./$username");
 exit();
 ?>

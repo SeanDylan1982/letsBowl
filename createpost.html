@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head> 
+    <title>Posts | Let's Bowl</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Sean Dylan Patterson">
+    <link href="./images/logo1.png" rel="icon"> 
+    <link href="./images/logo1.png" rel="apple-touch-icon" width="42" height="42" alt="The website's logo">
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script> -->
+</head>
+<body> <!-- Header menu section starts -->
+<div class="main">
+<div class="main_resize">
+    <div class="header">   
+        <div class="navbar" id="navbar">
+            <div class="logo">  
+                <a href="#"><h1><span>Let's</span><img src="./images/logo1.png" height="40" width="40" alt="The website's logo" />bowl</a></h1>
+            </div>
+            <!-- <ul class="menu-bar" id="menu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./calendar.html">Calendar</a></li> 
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+            </ul> -->
+            <input type="search" name="search" id="search-bar" placeholder=" Search...">
+            <img src="./images/search.png" alt="magnifying glass" id="search-icon">
+        </div>
+    </div> 
+    <!-- Main header ssection starts -->
+        <div id="banner"> 
+            <img id="banner-img" src="./images/header_images.png" alt="A custom banner image across the top of the page.">  
+            <img id="profile_pic" src="./images/logo.png" alt="The profile owner's picture"> 
+            <div id="username">User Name</div> 
+            <br> 
+        </div> <!-- User quick link buttons section starts -->
+        <div id="text">
+            <div id="menu_buttons">Timeline</div> 
+            <div id="menu_buttons">About Me</div>
+            <div id="menu_buttons">Friends</div>
+            <div id="menu_buttons">Photos</div>
+            <div id="menu_buttons">Videos</div>
+            <div id="menu_buttons">Settings</div>
+            <br>
+        </div>
+    </div> <!-- User quick link buttons section ends -->
+    </div> <!-- Main header section ends --> 
+<br>
+<br> <!-- Main body section starts -->
+    <div id="center-block"> 
+        <h1><span>Create </span><img src="./images/logo1.png" height="40" width="40" alt="An image of the website's logo"><a href="#"> post</a></h1>
+        <div class="row">
+            <br> 
+            <div class="form-control" id="form-container">
+                <form action="./createpost.php" method="post" name="create-post" id="create-post">
+                    <label for="username"> Username</label>
+                    <input type="text" name="username" placeholder="username" >
+                    <label for="title"> Title</label>
+                    <input type="text" name="title" placeholder="Title" autofucus>
+                    <label for="subtitle"> Sub-title</label>
+                    <input type="text" name="subtitle" placeholder="Sub-title">
+                    <label for="category"> Category </label>
+                    <select name="category" id="category-select" title="category">
+                        <option value="select" checked>Please Select</option>
+                        <option value="news">News</option>
+                        <option value="social-friendly">Social and friendly Bowls</option>
+                        <option value="Tournaments-competitions">Tournaments $ Competitions</option>
+                        <option value="official-rankings">Official Rankings</option>
+                        <option value="other">Other</option>
+                    </select>
+                    
+                    <label for="region"> Region</label>
+                    <select name="region" id="region-select" title="region">
+                        <option value="select" checked>Please Select</option>
+                        <option value="eastern-cape">Eastern Cape</option>
+                        <option value="free-state">Free State</option>
+                        <option value="Gauteng">Gauteng</option>
+                        <option value="Kwa-Zulu Natal">Kwa-Zulu Natal</option>
+                        <option value="Limpopo">Limpopo</option>
+                        <option value="Mpumalanga">Mpumalanga</option>
+                        <option value="northern-cape">Northern Cape</option>
+                        <option value="north-west">North West</option>
+                        <option value="western-cape">Western Cape</option>
+                    </select>
+                    <label for="body"> Body</label>
+                    <textarea type="text" name="body" placeholder="Body" cols="60" rows="10"></textarea>
+                    <label for="images">Upload Images</label>
+                    <input type="file" name="images" id="post-images" placeholder="images" >
+                    <button type="submit" name="submit" class="btn btn-success">Create a post... <i class="fa fa-pen"></i> </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="fbg">
+    <div class="fbg_resize">
+        <div class="col c1">
+        <h2><span>Recommended </span></h2>
+        <a href="#"><img src="images/pic_1.jpg" width="58" height="58" alt="Northmead BOwling Club Logo" /></a> <a href="#"><img src="images/pic_2.jpg" width="58" height="58" alt="Bowls SA Logo" /></a> <a href="#"><img src="images/pic_3.jpg" width="58" height="58" alt="The South African Olympic Committee Logo" /></a> <a href="#"><img src="images/pic_4.jpg" width="58" height="58" alt="The South African Department of Sports, Arts and Culture Emblem " /></a> <a href="#"><img src="images/pic_5.jpg" width="58" height="58" alt="Bowls - 1 Sport 4 Life Logo " /></a> <a href="#"><img src="images/pic_6.jpg" width="58" height="58" alt="Republic of South Africa Department of Sports, Arts and Culture words written out" /></a> </div>
+        <div class="col c2">
+        <h2><span>Joker Draws</span></h2>
+        <p>Live Joker Draw Events<br />
+            Follow along with the weekly Joker Draw for your club. What's happened so far and what's still coming up? </p>
+            <div><a href="#">The Tables... </a></div>
+        </div>
+        <div class="col c3">
+        <h2><span>Newsletter</span></h2>
+        <p>Subscribe to our monthly newsletter <br />
+            for announcements, promotions, special discounts and more. <a href="#">Have a look...</a></p>
+        </div>
+        <div class="col c3">
+        <form name="subscribe" data-netlify="true"> 
+            <p><label>Email <input type="email" name="email" required="true" placeholder="Email address"></label></p> 
+            <p><button type="submit">Send</button></p> 
+        </form>
+        </div>
+        <p>
+        |
+        </p>
+    </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="footer_resize">
+    <p class="lf">&copy; Copyright 2022 <a href="#">Let's Bowl</a>. All Rights Reserved. e&oe </p>
+    <p>View our <a href="/privacy.html">Privacy Policy </a></p>
+    <p class="rf">Layout by <a href="http://www.rocketwebsitetemplates.com/"> <title>Rocket Website Templates</title> Rocket Website Templates </a></p> 
+    <div class="clr"></div>
+    </div>
+</div>
+    <div>
+    </div>
+</body>
+</html>
