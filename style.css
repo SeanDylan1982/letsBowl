@@ -1,9 +1,10 @@
 @charset "utf-8";
 
 html {
-  background-color: #dfdfdf;
+  background-color: #f1f1f1;
   padding: 0;
   margin: 0;
+  
 }
 
 #navbar {
@@ -12,7 +13,7 @@ html {
   left: 0;
   width: 100%;
   height: 50px;
-  background-color: #11bb66;
+  background-image: linear-gradient(15deg, #59ff7d 13%, #8db9f1 45%, #59ff7d 92%);
   color: #1a1a1a;
   z-index: 2;
   box-shadow: 0 0 15px #1a1a1a;
@@ -63,6 +64,19 @@ html {
   left: 20px;
 }
 
+#images-form {
+  position: relative;
+}
+
+#banner-upload {
+  position: relative;
+}
+
+#ppic {
+  position: relative;
+  background-color: #f1f1f1;
+}
+
 #profile_pic{
   position: relative;
   width: 160px;
@@ -72,6 +86,7 @@ html {
   border-radius: 50%;
   border:solid 6px #f2f2f2;
   padding: 1px;
+  background-color: #f1f1f1;
 }
 
 #center-block {
@@ -85,10 +100,10 @@ html {
 #username {
   position: relative;
   width: 200px;
-  font-size: 1.5rem;
+  font-size: 2.2rem;
   font-weight: 500px;
   padding: 5px;
-  top: -180px;
+  top: -195px;
   left: 20px;
 }
 
@@ -122,13 +137,13 @@ html {
   height: 340px; 
   text-align: center;
   padding: 1px;
-
+  border-radius: 20px;
 }
 
 #menu_buttons{
 
-  background-color: #11bb66;
-  color: #474747; 
+  background-color: #11bb66dd;
+  color: #1a1a1a; 
   width: 90px;
   height: 22px;
   display: inline-block;
@@ -163,7 +178,7 @@ body {
   margin: 0;
 }
 .logo {
-  background-color: #f1f1f1cc;
+  background-color: #f1f1f1;
   text-align: center;
   width: 270px;
   height: 86px;
@@ -172,6 +187,7 @@ body {
   margin-left: 3px;
   position: relative;
   top: -38px;
+  border-radius: 10px;
 }
 h1 {
   margin: 0;
@@ -496,7 +512,7 @@ ol li .send {
   padding: 0;
   border: 1px solid #e1dddd;
 }
-.search input#s {
+.search input {
   float: left;
   width: 185px;
   padding: 7px 0 7px 10px;
@@ -513,6 +529,11 @@ ol li .send {
   border: 0;
   width: auto;
 }
+
+#search-bar {
+  border-radius: 10px;
+}
+
 .pagenavi {
   clear: both;
   font: normal 13px Arial, Helvetica, sans-serif;
@@ -550,4 +571,12 @@ ol li .send {
   width: 100%;
   font-size: 0;
   line-height: 0;
+}
+
+#save-images {
+  position: relative;
+  z-index: 2;
+  top: 10%;
+  left: 10%;
+
 }

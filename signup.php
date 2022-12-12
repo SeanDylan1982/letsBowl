@@ -33,7 +33,7 @@ function createFolder($profile, $path) {
   $username = $_POST['username'];
   $path = "./profile/$username";
   $profile = "./profile.html";
-  // mkdir($path, 0777, true);
+  mkdir($path, 0777, true);
   copy("./profile.html","./profile/$username.html");
   // rename("$path/profile.html","$path/$username.html");
   // copy("$path/$username.html","./profile.html");
