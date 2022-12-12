@@ -2,7 +2,7 @@
 
 https://letsbowl.tk/
 
-# Lets-Bowl
+# Letsbowl
  Lets Bowl Community Social Networks
 
 ![image](https://user-images.githubusercontent.com/74496368/207068032-13310d1c-1a6b-46be-8aaf-082bd70d10b5.png)
